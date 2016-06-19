@@ -7,10 +7,17 @@
     default-init-method="init" 
     default-destroy-method="destroy">
 
-   <bean id="helloWorld" class="info.shiyi.HelloWorld">
-   <property name="message" value="Hello World!"/>
+   <bean id="beanTeamplate" abstract="true">
+      <property name="message1" value="Hello World!"/>
+      <property name="message2" value="Hello Second World!"/>
    </bean>
    
-   <bean class="info.shiyi.InitHelloWorld" />
+   <bean id="helloWorld" class="info.shiyi.HelloWorld" parent="beanTeamplate">
+   </bean>
+   <bean id="helloIndia" class="info.shiyi.HelloIndia" parent="beanTeamplate">
+      <property name="message1" value="Hello India!"/>
+      <property name="message3" value="Namaste India!"/>
+   </bean>
+   
 
 </beans>
