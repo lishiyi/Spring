@@ -7,13 +7,11 @@
     default-init-method="init" 
     default-destroy-method="destroy">
 
-   <!-- Definition for textEditor bean -->
+   <!-- Definition for textEditor bean using inner bean -->
    <bean id="textEditor" class="info.shiyi.TextEditor">
-      <constructor-arg ref="spellChecker"/>
-   </bean>
-
-   <!-- Definition for spellChecker bean -->
-   <bean id="spellChecker" class="info.shiyi.SpellChecker">
+      <property name="spellChecker">
+         <bean id="spellChecker" class="info.shiyi.SpellChecker"/>
+       </property>
    </bean>
    
 
