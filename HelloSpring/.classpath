@@ -64,5 +64,9 @@
 	<classpathentry kind="lib" path="D:/Program Files/eclipse/spring-framework-4.3.0.RELEASE/libs/spring-websocket-4.3.0.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="D:/Program Files/eclipse/commons-logging-1.2/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="D:/Program Files/eclipse/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/eclipse/spring-framework-4.3.0.RELEASE/aspectj-1.8.9/lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/eclipse/spring-framework-4.3.0.RELEASE/aspectj-1.8.9/lib/aspectjtools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/eclipse/spring-framework-4.3.0.RELEASE/aspectj-1.8.9/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/eclipse/spring-framework-4.3.0.RELEASE/aspectj-1.8.9/lib/org.aspectj.matcher.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
