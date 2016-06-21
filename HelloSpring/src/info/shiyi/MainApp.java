@@ -6,10 +6,7 @@ public class MainApp {
    public static void main(String[] args) {
       ApplicationContext context = 
              new ClassPathXmlApplicationContext("Beans.xml");
-      JavaCollection jc=(JavaCollection)context.getBean("javaCollection");
-      jc.getAddressList();
-      jc.getAddressSet();
-      jc.getAddressMap();
-      jc.getAddressProp();
+      TextEditor te = (TextEditor) context.getBean("textEditor");
+      te.spellCheck();
    }
 }
