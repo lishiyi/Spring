@@ -8,14 +8,21 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-   <context:annotation-config/>
-
-   <!-- Definition for textEditor bean without constructor-arg  -->
-   <bean id="textEditor" class="info.shiyi.TextEditor">
+  <context:annotation-config/>
+  <!-- Definition for profile bean -->
+   <bean id="profile" class="info.shiyi.Profile">
    </bean>
 
-   <!-- Definition for spellChecker bean -->
-   <bean id="spellChecker" class="info.shiyi.SpellChecker">
+   <!-- Definition for student1 bean -->
+   <bean id="student1" class="info.shiyi.Student">
+      <property name="name"  value="Zara" />
+      <property name="age"  value="11"/>
+   </bean>
+
+   <!-- Definition for student2 bean -->
+   <bean id="student2" class="info.shiyi.Student">
+      <property name="name"  value="Nuha" />
+      <property name="age"  value="2"/>
    </bean>
    
 </beans>
