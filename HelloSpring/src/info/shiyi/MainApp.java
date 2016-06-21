@@ -1,15 +1,21 @@
 package info.shiyi;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.*;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp {
    public static void main(String[] args) {
-      ApplicationContext ctx = 
-      new AnnotationConfigApplicationContext(TextEditorConfig.class);
+      ConfigurableApplicationContext context = 
+      new ClassPathXmlApplicationContext("Beans.xml");
 
-      TextEditor te = ctx.getBean(TextEditor.class);
+      // Let us raise a start event.
+      context.start();
 
-      te.spellCheck();
+      HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+
+      obj.getMessage();
+
+      // Let us raise a stop event.
+      context.stop();
    }
 }
