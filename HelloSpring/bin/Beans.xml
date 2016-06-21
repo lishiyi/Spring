@@ -7,16 +7,13 @@
     default-init-method="init" 
     default-destroy-method="destroy">
 
-   <bean id="beanTeamplate" abstract="true">
-      <property name="message1" value="Hello World!"/>
-      <property name="message2" value="Hello Second World!"/>
+   <!-- Definition for textEditor bean -->
+   <bean id="textEditor" class="info.shiyi.TextEditor">
+      <constructor-arg ref="spellChecker"/>
    </bean>
-   
-   <bean id="helloWorld" class="info.shiyi.HelloWorld" parent="beanTeamplate">
-   </bean>
-   <bean id="helloIndia" class="info.shiyi.HelloIndia" parent="beanTeamplate">
-      <property name="message1" value="Hello India!"/>
-      <property name="message3" value="Namaste India!"/>
+
+   <!-- Definition for spellChecker bean -->
+   <bean id="spellChecker" class="info.shiyi.SpellChecker">
    </bean>
    
 
