@@ -10,12 +10,12 @@
 
    <context:annotation-config/>
 
-   <!-- Definition for student bean -->
-   <bean id="student" class="info.shiyi.Student">
-      <property name="name"  value="Zara" />
+   <!-- Definition for textEditor bean without constructor-arg  -->
+   <bean id="textEditor" class="info.shiyi.TextEditor">
+   </bean>
 
-      <!-- try without passing age and check the result -->
-      <property name="age"  value="11" />
+   <!-- Definition for spellChecker bean -->
+   <bean id="spellChecker" class="info.shiyi.SpellChecker">
    </bean>
    
 </beans>
