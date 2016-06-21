@@ -5,15 +5,11 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id="helloWorld" class="info.shiyi.HelloWorld">
-      <property name="message" value="Hello World!"/>
-   </bean>
+   <bean id="customEventHandler" 
+      class="info.shiyi.CustomEventHandler"/>
 
-   <bean id="cStartEventHandler" 
-         class="info.shiyi.CStartEventHandler"/>
-
-   <bean id="cStopEventHandler" 
-         class="info.shiyi.CStopEventHandler"/>
+   <bean id="customEventPublisher" 
+      class="info.shiyi.CustomEventPublisher"/>
 
    
 </beans>
