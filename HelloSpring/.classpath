@@ -68,5 +68,6 @@
 	<classpathentry kind="lib" path="D:/Program Files/eclipse/spring-framework-4.3.0.RELEASE/aspectj-1.8.9/lib/aspectjtools.jar"/>
 	<classpathentry kind="lib" path="D:/Program Files/eclipse/spring-framework-4.3.0.RELEASE/aspectj-1.8.9/lib/aspectjweaver.jar"/>
 	<classpathentry kind="lib" path="D:/Program Files/eclipse/spring-framework-4.3.0.RELEASE/aspectj-1.8.9/lib/org.aspectj.matcher.jar"/>
+	<classpathentry kind="lib" path="E:/Java/mysql-connector-java-5.1.34.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
