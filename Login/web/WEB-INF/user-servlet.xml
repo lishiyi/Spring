@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- springMVC 2.创建对应的servlet -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+
+    <!-- 开启SpringMVC -->
+    <mvc:annotation-driven/>
+    <context:component-scan base-package="info.shiyi"></context:component-scan>
+
+    <mvc:resources location="/resources/" mapping="/resources/**"/>
+
+    <!-- 配置视图的前缀和后缀 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property> -->
+        <property name="prefix" value="/WEB-INF/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="5000000"></property>
+    </bean>
+</beans>

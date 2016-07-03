@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MVC_JDBC:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/MVC_JDBC_war</output-path>
+    <root id="archive" name="MVC_JDBC_war.war">
+      <element id="artifact" artifact-name="MVC_JDBC:war exploded" />
+    </root>
+  </artifact>
+</component>
